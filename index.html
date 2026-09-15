@@ -50,4 +50,94 @@ background:#b8874a;
 clip-path:polygon(0 0,100% 0,50% 100%);
 transform-origin:top;
 transition:1s;
-z
+z-index:2;
+}
+
+.texto{
+position:absolute;
+width:100%;
+text-align:center;
+top:130px;
+font-size:22px;
+font-weight:bold;
+color:white;
+z-index:3;
+}
+
+.aberto .tampa{
+transform:rotateX(180deg);
+}
+
+.convite{
+position:fixed;
+inset:0;
+background:#f5ead7;
+display:none;
+justify-content:center;
+align-items:center;
+padding:15px;
+overflow:auto;
+}
+
+.convite img{
+width:100%;
+max-width:700px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.botoes{
+position:fixed;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:10px;
+}
+
+.btn{
+background:#25D366;
+color:white;
+padding:14px 22px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="envelope" id="envelope">
+<div class="base"></div>
+<div class="tampa"></div>
+<div class="texto">📩 Toque para abrir</div>
+</div>
+
+<div class="convite" id="convite">
+<img src="convite.jpg" alt="Chá Rifa Samuel Davi">
+
+<div class="botoes">
+<a class="btn"
+href="https://wa.me/?text=Participe%20do%20Chá%20Rifa%20do%20Samuel%20Davi!"
+target="_blank">
+Compartilhar
+</a>
+</div>
+</div>
+
+<script>
+document.getElementById("envelope").onclick=function(){
+
+this.classList.add("aberto");
+
+setTimeout(()=>{
+document.getElementById("envelope").style.display="none";
+document.getElementById("convite").style.display="flex";
+},900);
+
+}
+</script>
+
+</body>
+</html>

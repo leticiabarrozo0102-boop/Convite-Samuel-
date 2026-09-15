@@ -110,4 +110,20 @@ font-weight:bold;
 </div>
 
 <div class="convite" id="convite">
-<img src="file_0000000d540820e86adf33.jpg
+
+<img src="file_0000000d540820e86adf33.jpg" alt="Convite">
+</div>
+
+<script>
+document.getElementById("envelope").onclick = function() {
+    this.classList.add("aberto");
+
+    setTimeout(() => {
+        document.getElementById("envelope").style.display = "none";
+        document.getElementById("convite").style.display = "flex";
+    }, 900);
+}
+</script>
+
+</body>
+</html>

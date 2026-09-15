@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chá Rifa Samuel Davi</title>
+<title>Convite Samuel Davi</title>
 
 <style>
 *{
@@ -25,29 +25,26 @@ overflow:hidden;
 
 .envelope{
 position:relative;
-width:340px;
-height:240px;
+width:320px;
+height:220px;
 cursor:pointer;
-transition:1s;
 }
 
 .base{
 position:absolute;
 width:100%;
 height:100%;
-background:#c79a5c;
+background:#c89b5d;
 border-radius:10px;
-box-shadow:0 15px 30px rgba(0,0,0,.2);
+box-shadow:0 10px 25px rgba(0,0,0,.2);
 }
 
 .tampa{
 position:absolute;
-top:0;
-left:0;
 width:100%;
-height:120px;
-background:#b8874a;
-clip-path:polygon(0 0,100% 0,50% 100%);
+height:100%;
+background:#b88747;
+clip-path:polygon(0 0,100% 0,50% 55%);
 transform-origin:top;
 transition:1s;
 z-index:2;
@@ -57,7 +54,7 @@ z-index:2;
 position:absolute;
 width:100%;
 text-align:center;
-top:130px;
+top:90px;
 font-size:22px;
 font-weight:bold;
 color:white;
@@ -76,14 +73,13 @@ display:none;
 justify-content:center;
 align-items:center;
 padding:15px;
-overflow:auto;
 }
 
 .convite img{
 width:100%;
-max-width:700px;
+max-width:500px;
 border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.2);
+box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
 .botoes{
@@ -91,14 +87,12 @@ position:fixed;
 bottom:20px;
 left:50%;
 transform:translateX(-50%);
-display:flex;
-gap:10px;
 }
 
 .btn{
 background:#25D366;
 color:white;
-padding:14px 22px;
+padding:14px 24px;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
@@ -111,33 +105,8 @@ font-weight:bold;
 <div class="envelope" id="envelope">
 <div class="base"></div>
 <div class="tampa"></div>
-<div class="texto">📩 Toque para abrir</div>
+<div class="texto">Toque para abrir ✨</div>
 </div>
 
 <div class="convite" id="convite">
-<img src="convite.jpg" alt="Chá Rifa Samuel Davi">
-
-<div class="botoes">
-<a class="btn"
-href="https://wa.me/?text=Participe%20do%20Chá%20Rifa%20do%20Samuel%20Davi!"
-target="_blank">
-Compartilhar
-</a>
-</div>
-</div>
-
-<script>
-document.getElementById("envelope").onclick=function(){
-
-this.classList.add("aberto");
-
-setTimeout(()=>{
-document.getElementById("envelope").style.display="none";
-document.getElementById("convite").style.display="flex";
-},900);
-
-}
-</script>
-
-</body>
-</html>
+<img src="file_0000000d540820e86adf33.jpg
